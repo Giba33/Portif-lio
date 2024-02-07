@@ -45,7 +45,30 @@ body{
     width: 100%;
     padding: 10px 20px;
     border-radius: 20px;
-    
+    outline: nome;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+
     
 }
+.container .login .inputBox input::placeholder{
+    color:rgba(255,255,255,.75);
+}
+container .login .inputBox input[type="submit"]{
+    background: linear-gradient(45deg, #ff357a,#9800ce,);
+    border: nome;
+    cursor: pointer;
+}
+    .container .login .links{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
+    }
+    .container .login .links a{
+        color:#fff;
+        text-decoration: nome;
+    }
