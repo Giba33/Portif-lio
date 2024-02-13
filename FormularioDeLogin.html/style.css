@@ -23,6 +23,12 @@ body{
     background: red;
     
 }
+.container i {
+    position: absolute;
+    inset: 0;
+    background: yellow;
+}
+
 .container .login {
     position: absolute;
     width: 300px;
