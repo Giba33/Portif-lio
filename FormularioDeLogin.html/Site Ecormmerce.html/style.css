@@ -1,0 +1,18 @@
+
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration:nome;
+    list-style: nome;
+  }
+
+  :root{
+    --bg-color:var(--bg-color) #101113;
+    --text-color:#fff;
+    --main-color:#34e7f8;
+    --other-color:#fcfcfc;
+    --h1-font:4rem;
+    --p-font: 1rem;
+  }
