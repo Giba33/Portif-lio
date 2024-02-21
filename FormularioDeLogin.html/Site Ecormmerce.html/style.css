@@ -48,3 +48,10 @@ header{
     font-size:32px;
     margin-right: 5px;
 }
+.navegação a{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin:0 30px
+    transition: a .55s ease;
+}
