@@ -160,11 +160,63 @@ header{
   max-width: 100%;
 
 }
-.row
+.row{
+  background: var(--main-color);
+  height: 70%;
+  width: 70px;
+  border-radius: 50%;
+  justify-content: center;
+  transition: all.55s ease;
+  cursor: pointer;
+  display: inline-flex;
 
+}
+.row{
+  background:#ff758d;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all.55s ease;
+  cursor: pointer;
 
+}
+.row2:hover{
+  transform:  translateY(-8px);
 
+}
+.row2{
+  background:#ff758d;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all.55s ease;
+  cursor: pointer;
+}
+.row2:hover{
+  transform:  translateY(-8px);
 
+}
+
+.row3{
+  background:#ffd06d;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all.55s ease;
+  cursor: pointer;
+
+}
+.row3:hover{
+  transform:  translateY(-8px);
 
 
 
