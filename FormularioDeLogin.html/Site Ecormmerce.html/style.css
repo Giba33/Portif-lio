@@ -43,7 +43,7 @@ header{
     font-weight: bold;
 }
 
-.logo{
+.logo i{
     color: var(--main-color);
     font-size:32px;
     margin-right: 5px;
