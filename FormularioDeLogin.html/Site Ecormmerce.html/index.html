@@ -55,7 +55,19 @@
         <li><img src="main3.png"onclick="slider('product3.png')"></li>
     </div><!--row-->
     </div><!--main-->
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
 
+        };
+        let menu=document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () =>{
+            navbar.classList.toggle ('bx-x');
+            navbar.classList.toggle ('open');
+        }
+    </script>
 
     <div class="home-text">
         <h1>Wirelass <br> Meadphones </h1>
