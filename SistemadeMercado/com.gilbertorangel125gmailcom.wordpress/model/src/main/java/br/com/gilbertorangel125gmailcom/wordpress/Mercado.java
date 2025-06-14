@@ -3,10 +3,11 @@ package br.com.gilbertorangel125gmailcom.wordpress;
 import java.util.ArrayList;
 
 public class Mercado {
+    private final ArrayList<Object> categorias;
     private int codigo;
     private String nome;
     private ArrayList<Categoria> categoria;
-    private ArrayList<Item> item;
+    private ArrayList<item> item;
 
 
     public Mercado(String nome) {
@@ -66,5 +67,43 @@ public class Mercado {
         itens.remove(codigo);
 
     }
+
+    public void apresentarCategorias(){
+        for (int i=0; i<categorias.size(); i++){
+            System.out.println(("Codigo: "+i+", Nome da Categoria: "+categorias.get(i).getNome());
+
+        }
+
+        public void apresentarItens(){
+            for (int i=0; i<itens.size(); i++){
+                System.out.println(("Codigo: "+i+", Nome da Item: "+itens.get(i).getNome()+", preco: "+itens.get(i).getPreco);
+
+            }
+
+            public void apresentarCategoriaPorCodigo(int codigo)Object j;
+            {
+                for (int i=0; i<categorias.size(); i++) {
+                    if (codigo == 0) {
+                        for (int j = 0; j < categorias.get(0).getItens().size(); j++) ;
+                        System.out.println(categorias.get(0).getItens().get(j).getNome();
+
+                    }
+                    i = categorias.size();
+                } else if (codigo ==1){
+
+                    for (int j = 0; j < categorias.get(1).getItens().size(); j++) ;
+                    System.out.println(categorias.get(1).getItens().get(j).getNome())
+
+                }
+                    i = categorias.size();
+                } else if (codigo ==2){
+               for (int j = 0; j < categorias.get(2).getItens().size(); j++) ;
+               System.out.println(categorias.get(2).getItens().get(j).getNome())
+
+        }
+        i = categorias.size();
+                }
+
+                }
 }
 

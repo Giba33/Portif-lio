@@ -7,7 +7,7 @@ public class Categoria {
 
     public Categoria(String nome){
         this.setNome(nome);
-        itens new ArrayList<>();
+        getItens() new ArrayList<>();
 
     }
 
@@ -28,12 +28,20 @@ public class Categoria {
     }
 
     public void adicionarItem(Item item);{
-    itens.add(item);
+    getItens().add(item);
 
     }
-    public void remover(codigo){
-        System.out.println(itens.getNome()." foi removido da categoria!");
-        itens.remove(codigo);
+    public void removerItem( int codigo){
+        System.out.println(getItens().get(codigo).getNome()+" foi removido da categoria");
+        getItens().remove(codigo);
 
+    }
+
+    public ArrayList<Item> getItens() {
+        return itens;
+    }
+
+    public void setItens(ArrayList<Item> itens) {
+        this.itens = itens;
     }
 }
