@@ -1,1 +1,50 @@
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+class Produto {
+    private String nome;
+    private double preco;
+    private int estoque;
+    
+    public Produto(String nome, double preco, int estoque) {
+        this.nome = nome;
+        this.preco = preco;
+        this.estoque = estoque;
+    }
+    
+    // Getters e setters
+    public String getNome() { return nome; }
+    public double getPreco() { return preco; }
+    public int getEstoque() { return estoque; }
+    public void setEstoque(int estoque) { this.estoque = estoque; }
+}
+
+
+class Transacao {
+    enum Tipo { ENTRADA, SAIDA, VENDA }
+    
+    private Tipo tipo;
+    private Produto produto;
+    private int quantidade;
+    private LocalDate data;
+    
+    public Transacao(Tipo tipo, Produto produto, int quantidade) {
+        this.tipo = tipo;
+        this.produto = produto;
+        this.quantidade = quantidade;
+        this.data = LocalDate.now();
+    }
+    
+    // Getters
+    public Tipo getTipo() { return tipo; }
+    public Produto getProduto() { return produto; }
+    public int getQuantidade() { return quantidade; }
+    public LocalDate getData() { return data; }
+}
+
+
+
+
 
