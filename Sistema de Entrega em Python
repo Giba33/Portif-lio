@@ -1,0 +1,59 @@
+Projetos de aplicativo de Entrega
+
+
+crie um sistema de entrega a domicílio de pizza em formato em linguagem de programação em Python 
+sabores de pizza calabresa, catupiri, mussarela e bahiana.
+valores 23,00 , 30,00 e 50,00
+se passar de 23,00 o cliente ganha um bônus de duas pizzas do valor de 50,00.
+
+
+
+
+# Sistema de entrega de pizza em domicílio
+
+# Sabores disponíveis e preços
+sabores = {
+    1: {"nome": "Calabresa", "preco": 23.00},
+    2: {"nome": "Catupiri", "preco": 30.00},
+    3: {"nome": "Mussarela", "preco": 50.00},
+    4: {"nome": "Bahiana", "preco": 50.00}
+}
+
+print("===== SISTEMA DE ENTREGA DE PIZZA =====")
+print("Sabores disponíveis:")
+for codigo, info in sabores.items():
+    print(f"{codigo} - {info['nome']} - R$ {info['preco']:.2f}")
+
+# Escolha do cliente
+codigo_escolhido = int(input("Digite o número do sabor desejado: "))
+quantidade = int(input("Digite a quantidade de pizzas: "))
+
+if codigo_escolhido not in sabores:
+    print("Sabor inválido. Encerrando o pedido.")
+else:
+    sabor = sabores[codigo_escolhido]["nome"]
+    preco_unitario = sabores[codigo_escolhido]["preco"]
+    total = preco_unitario * quantidade
+
+    print("
+===== RESUMO DO PEDIDO =====")
+    print(f"Sabor: {sabor}")
+    print(f"Quantidade: {quantidade}")
+    print(f"Valor total: R$ {total:.2f}")
+
+    # Regra do bônus:
+    # se passar de 23,00 o cliente ganha um bônus de duas pizzas do valor de 50,00
+    if total > 23.00:
+        bonus_valor_unitario = 50.00
+        bonus_quantidade = 2
+        bonus_total = bonus_valor_unitario * bonus_quantidade
+        print("
+Parabéns! Você ganhou um bônus:")
+        print(f"{bonus_quantidade} pizzas extras de R$ {bonus_valor_unitario:.2f} cada.")
+        print(f"Valor total em bônus: R$ {bonus_total:.2f}")
+    else:
+        print("
+Você não atingiu o valor mínimo para o bônus.")
+
+    print("
+Obrigado por comprar na nossa pizzaria!")
